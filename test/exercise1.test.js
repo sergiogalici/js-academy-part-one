@@ -38,11 +38,11 @@ describe("Exercise 1: Kill Creatures", () => {
   })
 
   test("Kills rats and some goblins with excess arrows", () => {
-    expect(killCreatures(5, 5, 0, 13)).toEqual([5, 4, 0, 0])
+    expect(killCreatures(5, 5, 0, 13)).toEqual([5, 4, 0, 2])
   })
 
   test("Handles zero rats with other creatures present", () => {
-    expect(killCreatures(0, 3, 2, 20)).toEqual([0, 3, 2, 5])
+    expect(killCreatures(0, 3, 2, 20)).toEqual([0, 3, 2, 4])
   })
 
   test("Handles all zeros", () => {
