@@ -5,6 +5,10 @@ describe("Exercise 1: Kill Creatures", () => {
     expect(killCreatures(5, 3, 2, 21)).toEqual([5, 3, 2, 0])
   })
 
+  test("Kills all but one troll with almost sufficient arrows", () => {
+  expect(killCreatures(5, 3, 2, 20)).toEqual([5, 3, 1, 0])
+  })
+
   test("Kills only rats and goblins with limited arrows", () => {
     expect(killCreatures(5, 3, 2, 11)).toEqual([5, 3, 0, 0])
   })
