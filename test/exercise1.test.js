@@ -22,14 +22,14 @@ describe("Exercise 1: Kill Creatures", () => {
   })
 
   test("Handles excess arrows correctly", () => {
-    expect(killCreatures(2, 1, 1, 30)).toEqual([2, 1, 1, 22])
+    expect(killCreatures(2, 1, 1, 30)).toEqual([2, 1, 1, 21])
   })
 
   test("Kills all rats and leaves excess arrows", () => {
     expect(killCreatures(5, 0, 0, 10)).toEqual([5, 0, 0, 5])
   })
 
-  test("Kills some rats and leaves arrows", () => {
+  test("Kills some rats and leaves no arrows", () => {
     expect(killCreatures(10, 0, 0, 7)).toEqual([7, 0, 0, 0])
   })
 
@@ -38,7 +38,7 @@ describe("Exercise 1: Kill Creatures", () => {
   })
 
   test("Kills rats and some goblins with excess arrows", () => {
-    expect(killCreatures(5, 5, 0, 13)).toEqual([5, 4, 0, 2])
+    expect(killCreatures(5, 5, 0, 14)).toEqual([5, 4, 0, 1])
   })
 
   test("Handles zero rats with other creatures present", () => {
