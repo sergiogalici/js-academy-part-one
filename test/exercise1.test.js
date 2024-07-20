@@ -2,7 +2,7 @@ import killCreatures from "../src/exercise1"
 
 describe("Exercise 1: Kill Creatures", () => {
   test("Kills all creatures with sufficient arrows", () => {
-    expect(killCreatures(5, 3, 2, 20)).toEqual([5, 3, 2, 0])
+    expect(killCreatures(5, 3, 2, 21)).toEqual([5, 3, 2, 0])
   })
 
   test("Kills only rats and goblins with limited arrows", () => {
