@@ -17,7 +17,7 @@
  * @returns {[number, number, number, number]} - [rats killed, goblins killed, trolls killed, arrows left]
  */
 function killCreatures(rats, goblins, trolls, arrows) {
-  // Implement your solution here
+  return
 }
 
 export default killCreatures
